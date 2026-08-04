@@ -5,7 +5,7 @@ export const authenticate = (req: Request, res: Response, next: NextFunction) =>
   next();
 };
 
-export const authorize = (roles: string[]) => {
+export const authorize = () => {
   return (req: Request, res: Response, next: NextFunction) => {
     // TODO: Implement role-based authorization
     next();

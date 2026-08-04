@@ -131,8 +131,8 @@ devcollab/
 
 ### Branch Workflow
 
-1. `main` — Production-ready code (protected)
-2. `dev` — Development branch (default target for PRs)
+1. `main` — Production-ready code (protected, default branch)
+2. `dev` — Development branch (integration branch)
 3. Feature branches — Create from `dev` for new features
 
 ### Contributing
@@ -141,7 +141,7 @@ devcollab/
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit changes (`git commit -m 'Add amazing feature'`)
 4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request targeting `dev`
+5. Open a Pull Request targeting `main`
 
 ## API Endpoints
 

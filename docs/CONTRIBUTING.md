@@ -10,6 +10,42 @@ Welcome. This doc explains how we work together on this project. Read it once pr
 
 You never push directly to `main` or `dev`. Everything goes through a Pull Request (PR).
 
+
+## Branch Naming
+
+Use this pattern for every branch:
+
+```
+feature/short-description
+```
+
+Everything lowercase, words separated by hyphens. No spaces, no capital letters, no underscores.
+
+### Prefixes
+
+- `feature/` for new features or issue work, this is what we use for almost everything in Phase 1
+- `fix/` for bug fixes once we have things running
+- `chore/` for small non-code housekeeping, like updating docs or config
+
+### The description part
+
+Keep it short and tied to what the branch actually does, not the issue number alone. Numbers mean nothing when scanning a branch list without also opening GitHub.
+
+Examples:
+
+- `feature/register-endpoint`
+- `feature/register-form`
+- `feature/login-endpoint`
+- `feature/auth-middleware`
+- `feature/messages-schema`
+- `feature/chat-ui`
+
+### One branch or two per feature
+
+If FE and BE are building separable pieces of the same feature, like a register endpoint and a register form, use two different branches and two different PRs, even if the same two people are paired on the issue. This keeps each PR small and reviewable on its own, and means one half is not stuck waiting on the other to be mergeable.
+
+Only share a single branch when two people are genuinely editing the same piece of work together at the same time.
+
 ## The Basic Flow
 
 1. Check the Issues tab, find your assigned issue

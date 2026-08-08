@@ -146,7 +146,7 @@ export default function LoginPage() {
         </div>
 
         <h1 className="text-4xl font-bold lowercase tracking-tight">login</h1>
-        <p className="text-neutral-500 text-sm mt-2 mb-10">// authenticate to continue</p>
+        <p className="text-neutral-500 text-sm mt-2 mb-10">{"// authenticate to continue"}</p>
 
         <form onSubmit={handleSubmit} noValidate className="flex flex-col">
           <label htmlFor="email" className="text-[11px] text-neutral-400 lowercase mb-1.5">
